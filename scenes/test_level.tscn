@@ -9,6 +9,7 @@
 [node name="Player" parent="." unique_id=1714853461 instance=ExtResource("1_gojnm")]
 position = Vector2(37, -66)
 
-[node name="LevelManager" type="Node" parent="." unique_id=884041085]
+[node name="LevelManager" type="Node" parent="." unique_id=884041085 node_paths=PackedStringArray("player")]
 script = ExtResource("2_paw1w")
 platform_template = ExtResource("3_j6w7d")
+player = NodePath("../Player")
