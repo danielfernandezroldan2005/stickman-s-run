@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Stickman's Run"
+run/main_scene="uid://cn8k6mtt4bbcf"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -29,6 +30,7 @@ project/assembly_name="Stickman-s Run"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
