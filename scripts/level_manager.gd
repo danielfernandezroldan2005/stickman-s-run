@@ -2,6 +2,7 @@ extends Node
 
 @export var platform_template: PackedScene
 @export var player: CharacterBody2D
+@export var score_label: Label
 
 var last_spawn_x: float = 0.0
 var current_y: float = 100.0
@@ -22,5 +23,6 @@ func spawn_platform() -> void:
 func _process(delta: float) -> void:
 	if player != null and player.global_position.x > last_spawn_x - 500.0:
 		spawn_platform()
-	
+	if player != null:
+		score_label.text = "Distancia: " + str(round(player.global_position.x)) + " m"
 	

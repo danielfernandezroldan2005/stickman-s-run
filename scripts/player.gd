@@ -38,3 +38,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
+	
+	# Player has fallen.
+	if global_position.y > 600.0:
+		get_tree().reload_current_scene()
