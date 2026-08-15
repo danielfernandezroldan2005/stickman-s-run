@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Stickman's Run"
-run/main_scene="uid://cn8k6mtt4bbcf"
+run/main_scene="uid://dkg4gvg78ct8"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

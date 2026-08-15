@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://tdolhgrn3rs7"]
+
+[ext_resource type="Script" uid="uid://cm463w2t0syaa" path="res://scripts/obstacle.gd" id="1_7ukg5"]
+
+[node name="Obstacle" type="Area2D" unique_id=422016641]
+script = ExtResource("1_7ukg5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1550640538]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1597531756]
+offset_left = -6.0
+offset_top = -3.0
+offset_right = 34.0
+offset_bottom = 37.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
